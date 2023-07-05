@@ -9,7 +9,7 @@ This project is currently comprised of a series of scripts designed to quickly g
 ### hydrophobicityPlot(fasta):
 * This function takes an amino acid sequence and creates a hydrophobicity plot using pyplot and the getHydrophobicity() function.
 * Here is a sample plot of a Cytochrome P450 from Pseudomonas Aeruginosa PAO1.
-![Hydrophobicity plot](https://github.com/krulik1/Protein-2ndary-struc-analysis/blob/main/p450_DAO1.svg) 
+![Hydrophobicity plot](https://raw.githubusercontent.com/krulik1/Protein-2ndary-struc-analysis/main/p450_DAO1.svg) 
 ### hydroSeq(fasta):
 * This function takes the hydrophobicity data of the fasta sequence and transforms it into bar graph that counts the number of contiguous sequences of same hydrophobicity and organizes them by length.
 * The results for the cytochrome P450 suggest that the data is normally distributed:
