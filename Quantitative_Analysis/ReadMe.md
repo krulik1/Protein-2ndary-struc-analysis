@@ -1,4 +1,4 @@
-# Protein Sendary Structure Analysis:
+# Quantitative Analysis of Pseudomonas Aeruginosa PAO1 Cytochrome P450:
 This project is currently comprised of a series of scripts designed to quickly give the user data about the secondary structure of an AA sequence. The main purpose of this project is for me to practise and learn data analysis skills and apply them to a subject that I am interested in. In this case, the subject is proteomics.
 ## Scripts:
 * \*Please note that this project uses the Kyle-Doolittle scale for hydrophobicity values.
