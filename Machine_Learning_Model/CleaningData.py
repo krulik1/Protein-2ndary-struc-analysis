@@ -68,15 +68,10 @@ def cleanData(input_file, output_file):
         lines = f.readlines()
         for line in lines:
             if line.startswith("#"):
-                continue
             elif line.startswith("<"):
                 clean.append(line)
-
-                continue
             elif line.startswith("e"):
                 clean.append(line)
-
-                continue
             elif startswith(line, hydrophobicity_values):
                 t = line.split()
                 hydrophobicity = getHydrophobicity(t[0])
