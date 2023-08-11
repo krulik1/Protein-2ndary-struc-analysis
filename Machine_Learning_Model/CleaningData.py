@@ -51,6 +51,11 @@ def getHydrophobicity(aa):
         return hydrophobicity_values.get(aa, None)
     return aa
 
+##THIS VERSION DID THE TRICK
+##THIS IS MY CODE, I WROTE IT
+
+
+
 def startswith(input_string, dictionary):
     for key in dictionary:
         if input_string.startswith(key):
@@ -66,17 +71,26 @@ def cleanData(input_file, output_file):
                 continue
             elif line.startswith("<"):
                 clean.append(line)
+
+                continue
             elif line.startswith("e"):
                 clean.append(line)
+
+                continue
             elif startswith(line, hydrophobicity_values):
                 t = line.split()
                 hydrophobicity = getHydrophobicity(t[0])
                 structure = getSecondaryStructure(t[1])
                 clean.append(f"{hydrophobicity} {structure}\n")
-    
+
     with open(output_file, 'w') as f:
         f.writelines(clean)
 
-# replace with filepath to data to clean:
-input_file = input() 
-output_file = input()
+
+input_file = "C:/Users/Jakub/Desktop/Projects/ANN/DataSet/protein-secondary-structure.train"
+input_file2 = "C:/Users/Jakub/Desktop/Projects/ANN/DataSet/protein-secondary-structure.test"
+output_file = "C:/Users/Jakub/Desktop/Projects/ANN/DataSet/bSprouts.train"
+output_file2 = "C:/Users/Jakub/Desktop/Projects/ANN/DataSet/cake.train"
+
+cleanData(input_file, output_file)
+cleanData(input_file2, output_file2)
